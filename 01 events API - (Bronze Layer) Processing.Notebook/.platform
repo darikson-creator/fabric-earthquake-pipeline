@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Notebook",
+    "displayName": "01 events API - (Bronze Layer) Processing"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "d75beb57-d48e-94f4-49ef-dd4435e07c9d"
+  }
+}
