@@ -1,0 +1,11 @@
+expression 'DirectLake - earthquakes_lakehouse' =
+		let
+		    Source = AzureStorage.DataLake("https://onelake.dfs.fabric.microsoft.com/b4aa2e2a-6e35-4361-87e1-3b48f1ce54a0/ca7dd728-731a-463b-a116-116bc6615919", [HierarchicalNavigation=true])
+		in
+		    Source
+	lineageTag: 13821601-2620-4913-bfc8-27b3aff64ef6
+
+	annotation PBI_IncludeFutureArtifacts = False
+
+	annotation PBI_RemovedChildren = [{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"[dbo].[earthquake_events_silver]"}},"objectType":"Table"}]
+
