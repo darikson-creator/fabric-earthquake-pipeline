@@ -57,10 +57,17 @@
       "data": [
         {
           "properties": {
+            "startDate": {
+              "expr": {
+                "Literal": {
+                  "Value": "datetime'2026-08-20T00:03:13.200'"
+                }
+              }
+            },
             "endDate": {
               "expr": {
                 "Literal": {
-                  "Value": "datetime'2026-09-08T23:50:10.970'"
+                  "Value": "datetime'2026-09-10T23:51:18.260'"
                 }
               }
             },
@@ -90,21 +97,45 @@
                 "Where": [
                   {
                     "Condition": {
-                      "Comparison": {
-                        "ComparisonKind": 3,
+                      "And": {
                         "Left": {
-                          "Column": {
-                            "Expression": {
-                              "SourceRef": {
-                                "Source": "e"
+                          "Comparison": {
+                            "ComparisonKind": 2,
+                            "Left": {
+                              "Column": {
+                                "Expression": {
+                                  "SourceRef": {
+                                    "Source": "e"
+                                  }
+                                },
+                                "Property": "time"
                               }
                             },
-                            "Property": "time"
+                            "Right": {
+                              "Literal": {
+                                "Value": "datetime'2026-08-20T00:00:00'"
+                              }
+                            }
                           }
                         },
                         "Right": {
-                          "Literal": {
-                            "Value": "datetime'2026-09-09T00:00:00'"
+                          "Comparison": {
+                            "ComparisonKind": 3,
+                            "Left": {
+                              "Column": {
+                                "Expression": {
+                                  "SourceRef": {
+                                    "Source": "e"
+                                  }
+                                },
+                                "Property": "time"
+                              }
+                            },
+                            "Right": {
+                              "Literal": {
+                                "Value": "datetime'2026-09-11T00:00:00'"
+                              }
+                            }
                           }
                         }
                       }
