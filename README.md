@@ -18,7 +18,7 @@ Gold: I enriched the information. I used a reverse geocoding library (`reverse_g
 
 I created a Data Factory pipeline with dynamic parameters to automate the process to run daily. Then, I connected the Gold layer directly to Power BI (using Direct Lake) to display the report in real-time without duplicating data.
 
-4. Key Technologies
+4). Key Technologies
 
 - Platform: Microsoft Fabric
 - Languages: Python, PySpark, SQL
